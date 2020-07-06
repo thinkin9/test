@@ -3,7 +3,7 @@ layout: post
 title:  "About me"
 f_update: 2020-05-05 12:01:36 +0900
 l_updata: 2020-07-06 17:36:52 +0900
-categories: Introduce
+categories: Me
 ---
 
 <span style="font-family: Times"> 
