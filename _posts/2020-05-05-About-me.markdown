@@ -1,14 +1,10 @@
 ---
 layout: post
 title:  "About me"
-f_update: 2020-05-05 12:01:36 +0900
-l_updata: 2020-07-06 17:36:52 +0900
+f_update:   2020-05-05 12:01:36 +0900
+l_updata:   2020-07-06 17:36:52 +0900
 categories: Me
 ---
-
-<span style="font-family: Times"> 
-
-<div style="text-align: center"><i><b>Last Updated on July 6th, 2020</b></i></div>
 
 ## Education
 <hr style="height: 2px; border:none; margin-top: -1em; margin-bottom:0.5em; padding: 0; background:black">

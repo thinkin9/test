@@ -29,8 +29,8 @@ layout: default
                <li>{{ tag }}</li>
              {%- endfor -%}
             </ul>
-            <div class="post-date"><i class="icon-calendar"></i>{{ page.f_update | f_update: f_date_format }}</div>
-            <div class="post-date"><i class="icon-calendar"></i>{{ page.l_update | l_update: l_date_format }}</div>
+            <div class="post-f_update"><i class="icon-calendar"></i>{{ page.f_update | f_update: f_date_format }}</div>
+            <div class="post-l_update"><i class="icon-calendar"></i>{{ page.l_update | l_update: l_date_format }}</div>
           </div>
           <div class="post">
             {%- if site.show_excerpts -%}
