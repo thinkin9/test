@@ -49,7 +49,8 @@
         <p>HELLO</p>
         {%- for category in site.categories -%}
           <li><a href="/">{{ category }}</a></li>
-          {%- for post in site.categories[category] -%}
+          <!--
+          {%- for post.category in site.categories[category] -%}
             <ul>
               <li>
                 <a href="{{ site.baseurl| }}{{ post.url| }}">
@@ -58,6 +59,7 @@
               </li>
             </ul>
           {%- endfor -%}
+          -->
         {%- endfor -%}
       </ul>
       <!--
