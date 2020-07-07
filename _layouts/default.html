@@ -43,18 +43,11 @@
           </li>
         </a>
       </ul>
-      <ul class="post-list">
-        <p>HELLO</p>
-        {% assign pages_list = site.pages %}
-        {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if node.layout == "category" %}
-              <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-              href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
+      <ul class="post-list" style="text-align: left;">
+        {% for category_node in site.category %}
+        <li><a href="/">{{category_node}}</a></li>
       </ul>
+
       <!--
         {%- if site.plainwhite.navigation -%}
           <nav class="navigation">
