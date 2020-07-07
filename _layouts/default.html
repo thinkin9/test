@@ -47,22 +47,22 @@
       </ul>
       <div class="site-category" style="font-size: 18px; margin-bottom: 0.5em;">Categories
         <br>
-        <li><a href="/test/category/Git.html">Git</a>
+        <li><a href="/test/category/Git.html" style="font-size: 14px;">Git</a>
           <ul>
             {% for post in site.categories["Git"] %}
-            <li>
-              <a href="{{ site.baseurl| }}{{ post.url| }}">
-                {{post.title}}
-              </a>
-            </li>
+              <li>
+                <a href="/{{ post.url }}/">
+                  {{post.title}}
+                </a>
+              </li>
             {% endfor %}
           </ul>
         </li>
-        <li><a href="/test/category/Me.html">Me</a>
+        <li><a href="/test/category/Me.html" style="font-size: 14px;">Me</a>
           <ul>
             {% for post in site.categories["Me"] %}
             <li>
-              <a href="{{ site.baseurl| }}{{ post.url| }}">
+              <a href="/">
                 {{post.title}}
               </a>
             </li>

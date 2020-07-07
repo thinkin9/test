@@ -259,21 +259,17 @@ main {
   padding: 0;
   display: inline-block;
   width: 100%;
+  text-decoration: none;
   ul{
     list-style: none;
     line-height: 1.5;
     margin: 0 auto;
   }
   li{
-    font-size: 14px;
     line-height: 1.5;
     margin-left: 10px;
   }
-  li a{
-    margin: 0;
-    padding: 0;
-  }
-  li:hover a{
+  li:hover {
     background: #e3e3e3;
   }
 
@@ -283,10 +279,6 @@ main {
   }
   li:hover ul{
     display: inline-block;
-  }
-  li ul a{
     background-color: #e3e3e3;
-    display: none;
-    text-decoration: none;
   }
 }
