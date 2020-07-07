@@ -47,7 +47,7 @@
       </ul>
       <ul class="post-list">
         <p>HELLO</p>
-        {%- for category in site.categories -%}
+        {% for category in site.categories %}
           <li><a href="/">{{ category }}</a></li>
           <!--
           {%- for post.category in site.categories[category] -%}
@@ -60,7 +60,7 @@
             </ul>
           {%- endfor -%}
           -->
-        {%- endfor -%}
+        {% endfor %}
       </ul>
       <!--
         {%- if site.plainwhite.navigation -%}
