@@ -251,7 +251,6 @@ main {
 
 .site-category{
   font-size: 22px;
-  background-color: white;
   color: #222222;
   font-weight: normal;
   text-align: left;
@@ -265,15 +264,8 @@ main {
     margin: 0 auto;
   }
   li{
-    font-size: 14px;
-    float: left;
-    background-color: #e3e3e3;
-    padding: 5px 20px;
-    border-radius: 2px;
-    @media screen and (max-width: $mobileW) {
-      margin-top: 5px;
-    }
-    margin-right: 10px;
+    line-height: 1.5;
+    margin-left: 10px;
   }
   li a{
     transition: none;
