@@ -26,7 +26,7 @@
       </p>
       <ul class="social">
         {%- if site.plainwhite.social_links.github -%}
-        <a href="https://github.com/{{ site.plainwhite.social_links.github }}">
+        <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
           <li>
             <i class="icon-github-circled"></i>
           </li>
@@ -39,7 +39,7 @@
           </li>
         </a>
         {%- endif -%}
-        <a href="https://www.acmicpc.net/user/zxzx1825">
+        <a href="https://www.acmicpc.net/user/zxzx1825" target="_blank">
           <li>
             <img src="/assets/baekjoon.png" width="30" height="35">
           </li>
@@ -50,16 +50,20 @@
         <li><a href="/test/category/Git.html" style="font-size: 14px;">Git</a>
           <ul>
             {% for post in site.categories["Git"] %}
-              <li><a href="/test/{{post.url}}">{{post.title}}
-              </li>
+              <a href="{{ site.baseurl| }}{{ post.url| }}">
+                <li>{{post.title}}
+                </li>
+              </a>
             {% endfor %}
           </ul>
         </li>
         <li><a href="/test/category/Me.html" style="font-size: 14px;">Me</a>
           <ul>
             {% for post in site.categories["Me"] %}
-              <li><a href="/test/{{post.url}}">{{post.title}}
+            <a href="{{ site.baseurl| }}{{ post.url| }}">
+              <li>{{post.title}}
               </li>
+            </a>
             {% endfor %}
           </ul>
         </li>
