@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-{%- assign fupdate_format = site.plainwhite.fupdate_format | default: "%b %-d, %Y" -%}
-{%- assign lupdate_format = site.plainwhite.lupdate_format | default: "%b %-d, %Y" -%}
+{%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
 <div class="post-container">
   <a class="post-link" href="{{ page.url | relative_url }}">
     <h2 class="post-title">{{ page.title | escape }}</h2>
@@ -13,9 +12,8 @@ layout: default
       <li>{{ tag }}</li>
       {%- endfor -%}
     </ul>
-    <div class="post-date" style="color: black;"><i
-      class="icon-calendar"></i>{{ page.fupdate | fupdate: fupdate_format}}<i
-      class="icon-calendar"></i>{{ page.lupdate | lupdate: lupdate_format}}</div>
+    <div class="post-date"><i class="icon-calendar"></i>{{ page.fupdate | fupdate: date_format }}</div>
+  </div>
   <div class="post">
     {{ content }}
   </div>

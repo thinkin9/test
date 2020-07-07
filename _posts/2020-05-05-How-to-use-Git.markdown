@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "How to use Git"
-f_update:   2020-05-05 15:03:24 +0900
-l_updata:   2020-07-06 17:36:52 +0900
+fupdate:   "2020-05-05 15:03:24 +0900"
+lupdata:   "2020-07-06 17:36:52 +0900"
 categories: Git
 ---
 
