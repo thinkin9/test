@@ -45,7 +45,7 @@
           </li>
         </a>
       </ul>
-      <div class="post-list">
+      <ul class="post-list">
         <p>HELLO</p>
         {%- for category in site.categories -%}
           <li><a href="/">{{ category }}</a></li>
@@ -55,12 +55,11 @@
                 <a href="{{ site.baseurl| }}{{ post.url| }}">
                   {{post.title}}
                 </a>
-                <small>{{ post.data | data_to_string}}</small>
               </li>
             </ul>
           {%- endfor -%}
         {%- endfor -%}
-      </div>
+      </ul>
       <!--
         {%- if site.plainwhite.navigation -%}
           <nav class="navigation">
