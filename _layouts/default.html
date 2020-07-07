@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <style>
     #mainmargin {
@@ -9,7 +8,6 @@
   </style>
   {%- include head.html -%}
 </head>
-
 <body>
   <main class="container">
     <section class="about">
@@ -47,9 +45,18 @@
       </ul>
       <ul class="post-list">
         <p>HELLO</p>
-        {% for category in site.category %}
-          <li><a href="/">{{ category }}</a></li>
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.layout == "category" %}
+              <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+              href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
           <!--
+        {% for category in site.category %}
+          <li>{{ category }}</a></li>
           {%- for post.category in site.categories[category] -%}
             <ul>
               <li>
