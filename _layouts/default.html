@@ -45,24 +45,23 @@
           </li>
         </a>
       </ul>
-      <!--
       {%- if site.posts.size > 0 -%}
+      <ul class="post-list">
         {%- for category in site.category -%}
-          {%- for post in site.categories[category] -%}
-      -->
-        <ul class="post-list">
-          {%- assign category = page.category | default: page.title -%}
-          {%- for post in site.categories[category] -%}
-          <li>
-            <h3>
-              <a href="{{ site.baseurl| }}{{ post.url| }}">
-                {{post.title}}
-              </a>
-              <small>{{ post.data | data_to_string}}</small>
-            </h3>
-          </li>
-          {%- endfor -%}
-        </ul>
+        {%- for post in site.categories[category] -%}
+        <li>
+          <h3>
+            <a href="{{ site.baseurl| }}{{ post.url| }}">
+              {{post.title}}
+            </a>
+            <small>{{ post.data | data_to_string}}</small>
+          </h3>
+        </li>
+        {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+      </ul>
       <!--
         {%- if site.plainwhite.navigation -%}
           <nav class="navigation">
