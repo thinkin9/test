@@ -277,14 +277,14 @@ main {
     background: #e3e3e3;
   }
 
-  li ul{
+  li a ul{
     display: none;
     position: absolute;
   }
-  li:hover ul{
+  li:hover a ul{
     display: inline-block;
   }
-  li ul a{
+  li a ul{
     transition: none;
     background-color: #e3e3e3;
     display: none;
