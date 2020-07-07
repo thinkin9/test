@@ -5,6 +5,8 @@ date:   "2020-05-05 15:03:24 +0900"
 categories: Git
 ---
 
+<div style="text-align: center"><i><b>Last Updated on July 6th, 2020</b></i></div>
+
 ## Abstract
 0. Reference: [https://rogerdudler.github.io/git-guide/](https://rogerdudler.github.io/git-guide/index.ko.html)
 1. What's the Git?
