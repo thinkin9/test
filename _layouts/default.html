@@ -50,20 +50,22 @@
         <li><a href="/test/category/Git.html">Git</a>
           <ul>
             {% for post in site.categories["Git"] %}
+            <li>
               <a href="{{ site.baseurl| }}{{ post.url| }}">
-                <li>{{post.title}}
-                </li>
+                {{post.title}}
               </a>
+            </li>
             {% endfor %}
           </ul>
         </li>
-        <li><a href="/test/category/Me.html" style="font-size: 14px;">Me</a>
+        <li><a href="/test/category/Me.html">Me</a>
           <ul>
             {% for post in site.categories["Me"] %}
-            <a href="{{ site.baseurl| }}{{ post.url| }}">
-              <li>{{post.title}}
-              </li>
-            </a>
+            <li>
+              <a href="{{ site.baseurl| }}{{ post.url| }}">
+                {{post.title}}
+              </a>
+            </li>
             {% endfor %}
           </ul>
         </li>
