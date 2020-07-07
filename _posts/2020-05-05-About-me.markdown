@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "About me"
-fupdate:   "2020-05-05 12:01:36 +0900"
+fupdate:   2020-05-05 12:01:36 +0900
 ldupdata:   "2020-07-06 17:36:52 +0900"
 categories: Me
 ---
