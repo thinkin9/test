@@ -1,14 +1,10 @@
 ---
 layout: post
 title:  "About me"
-fupdate:   2020-05-05 12:01:36 +0900
+date:   2020-05-05 12:01:36 +0900
 ldupdata:   "2020-07-06 17:36:52 +0900"
 categories: Me
 ---
-
-<hr style="height: 2px; border:none; margin-bottom:0.5em; padding: 0; background:black">
-
-<br>
 
 <div style="text-align: center"><i><b>Last Updated on July 6th, 2020</b></i></div>
 

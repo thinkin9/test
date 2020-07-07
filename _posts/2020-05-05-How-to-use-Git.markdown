@@ -1,12 +1,10 @@
 ---
 layout: post
 title: "How to use Git"
-fupdate:   "2020-05-05 15:03:24 +0900"
+date:   "2020-05-05 15:03:24 +0900"
 lupdata:   "2020-07-06 17:36:52 +0900"
 categories: Git
 ---
-
-<hr style="height: 2px; border:none; margin-bottom:0.5em; padding: 0; background:black">
 
 ## Abstract
 0. Reference: [https://rogerdudler.github.io/git-guide/](https://rogerdudler.github.io/git-guide/index.ko.html)
