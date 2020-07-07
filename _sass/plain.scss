@@ -265,8 +265,15 @@ main {
     margin: 0 auto;
   }
   li{
-    line-height: 1.5;
-    margin-left: 10px;
+    font-size: 14px;
+    float: left;
+    background-color: #e3e3e3;
+    padding: 5px 20px;
+    border-radius: 2px;
+    @media screen and (max-width: $mobileW) {
+      margin-top: 5px;
+    }
+    margin-right: 10px;
   }
   li a{
     transition: none;
