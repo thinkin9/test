@@ -48,19 +48,20 @@
       <div class="site-category" style="font-size: 18px;">Categories
         <br>
         <li><a href="/test/category/Git.html">Git</a>
-          {% for post in site.categories["Git"] %}
-            <li><a href="{{ site.baseurl| }}{{ post.url| }}">{{post.title}}</a>
-            </li>
-          {% endfor %}
+          <ul>
+            {% for post in site.categories["Git"] %}
+              <li><a href="{{ site.baseurl| }}{{ post.url }}">{{post.title}}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </li>
         <li><a href="/test/category/Me.html">Me</a>
-          {% for post in site.categories["Me"] %}
-            <li>
-              <a href="{{ site.baseurl| }}{{ post.url| }}">
-                {{post.title}}
-              </a>
-            </li>
+          <ul>
+            {% for post in site.categories["Me"] %}
+              <li><a href="{{ site.baseurl| }}{{ post.url }}">{{post.title}}</a>
+              </li>
             {% endfor %}
+          </ul>
         </li>
       </div>
 
