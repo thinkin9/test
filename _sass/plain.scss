@@ -265,11 +265,11 @@ main {
     margin: 0 auto;
   }
   li{
+    font-size: 14px;
     line-height: 1.5;
     margin-left: 10px;
   }
   li a{
-    transition: none;
     margin: 0;
     padding: 0;
   }
@@ -285,7 +285,6 @@ main {
     display: inline-block;
   }
   li a ul{
-    transition: none;
     background-color: #e3e3e3;
     display: none;
     text-decoration: none;
