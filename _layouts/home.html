@@ -3,47 +3,46 @@ layout: default
 ---
 
 {%- if page.title -%}
-<h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
 
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<ul class="posts">
-  <li>
-    <h1 id="posts-label">Recent post</h1>
-  </li>
-  {%- assign count = 0 -%}
-  {%- for post in site.posts -%}
-  {%- assign count = count | plus: 1 -%}
-  {%- if count < 6 -%}
-  <li>
-    {%- assign fupdate_format = site.plainwhite.fupdate_format | default: "%b %-d, %Y" -%}
-    {%- assign lupdate_format = site.plainwhite.lupdate_format | default: "%b %-d, %Y" -%}
-    <a class="post-link" href="{{ post.url | relative_url }}">
-      <h2 class="post-title">{{ post.title | escape }}</h2>
-    </a>
-    <div class="post-meta">
-      <ul class="post-categories">
-        {%- for tag in post.categories -%}
-        <li>{{ tag }}</li>
-        {%- endfor -%}
-      </ul>
-      <div class="post-date" style="color: black;"><i
-        class="icon-calendar"></i>{{ page.fupdate | fupdate: fupdate_format}}<i
-        class="icon-calendar"></i>{{ page.lupdate | lupdate: lupdate_format}}</div>
-    </div>
-    <div class="post">
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
+  <ul class="posts">
+    <li>
+      <h1 id="posts-label">Recent post</h1>
+    </li>
+    {%- assign count = 0 -%}
+    {%- for post in site.posts -%}
+      {%- assign count = count | plus: 1 -%}
+      {%- if count < 6 -%}
+        <li>
+          {%- assign f_date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+          {%- assign l_date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+         <a class="post-link" href="{{ post.url | relative_url }}">
+            <h2 class="post-title">{{ post.title | escape }}</h2>
+         </a>
+         <div class="post-meta">
+           <ul class="post-categories">
+             {%- for tag in post.categories -%}
+               <li>{{ tag }}</li>
+             {%- endfor -%}
+            </ul>
+            <div class="post-date">First updated on <i class="icon-calendar"></i>{{ page.f_update | f_update: f_date_format }}</div>
+            <div class="post-date">Last updated on <i class="icon-calendar"></i>{{ page.l_update | l_update: l_date_format }}</div>
+          </div>
+          <div class="post">
+            {%- if site.show_excerpts -%}
+             {{ post.excerpt }}
+           {%- endif -%}
+         </div>
+       </li>
       {%- endif -%}
-    </div>
-  </li>
-  {%- endif -%}
-  {%- endfor -%}
-</ul>
+    {%- endfor -%}
+  </ul>
 
-<!-- <p class="feed-subscribe"><svg class="svg-icon orange">
+  <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
 		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
 	</svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
 {%- endif -%}
