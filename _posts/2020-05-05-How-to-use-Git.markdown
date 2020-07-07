@@ -12,6 +12,8 @@ categories: Git
 2. Location
 3. Command
 
+<hr style="height: 2px; border:none; margin-bottom:0.5em; padding: 0; background:black">
+
 ### 1. What's the Git?
 <hr style="height: 2px; border:none; margin-top: -1em; margin-bottom:0.5em; padding: 0; background:black">
 
