@@ -188,13 +188,9 @@ main {
 .post-meta {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   @media screen and (max-width: $mobileW) {
     flex-direction: column-reverse;
     align-items: baseline;
-    .post-date {
-      margin-bottom: 16px;
-    }
   }
 }
 .post-link {
