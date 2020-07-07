@@ -6,13 +6,13 @@ lupdata:   "2020-07-06 17:36:52 +0900"
 categories: Git
 ---
 
+<hr style="height: 2px; border:none; margin-bottom:0.5em; padding: 0; background:black">
+
 ## Abstract
 0. Reference: [https://rogerdudler.github.io/git-guide/](https://rogerdudler.github.io/git-guide/index.ko.html)
 1. What's the Git?
 2. Location
 3. Command
-
-<hr style="height: 2px; border:none; margin-bottom:0.5em; padding: 0; background:black">
 
 ### 1. What's the Git?
 <hr style="height: 2px; border:none; margin-top: -1em; margin-bottom:0.5em; padding: 0; background:black">
