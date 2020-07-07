@@ -49,12 +49,9 @@
         <br>
         <li><a href="/test/category/Git.html">Git</a>
           {% for post in site.categories["Git"] %}
-            <li>
-              <a href="{{ site.baseurl| }}{{ post.url| }}">
-                {{post.title}}
-              </a>
+            <li><a href="{{ site.baseurl| }}{{ post.url| }}">{{post.title}}</a>
             </li>
-            {% endfor %}
+          {% endfor %}
         </li>
         <li><a href="/test/category/Me.html">Me</a>
           {% for post in site.categories["Me"] %}
