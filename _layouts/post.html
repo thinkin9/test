@@ -13,7 +13,8 @@ layout: default
       {%- endfor -%}
     </ul>
     <div class="post-date" style="color: black;"><i
-      class="icon-calendar"></i>{{ page.fupdate | fupdate: date_format }}{{ page.lupdate | lupdate: date_format }}</div>
+      class="icon-calendar"></i>{{ page.fupdate }}<i
+      class="icon-calendar"></i>{{ page.lupdate }}</div>
   <div class="post">
     {{ content }}
   </div>
