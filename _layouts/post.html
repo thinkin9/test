@@ -12,8 +12,10 @@ layout: default
       <li>{{ tag }}</li>
       {%- endfor -%}
     </ul>
-    <div class="post-date" style="color: black;"><i class="icon-calendar"></i>{{ page.fupdate }}</div>
-    <div class="post-date" style="color: black;"><i class="icon-calendar"></i>{{ <page class="lupdate"></page> }}</div>
+    <div class="post-date" style="color: black;"><i
+      class="icon-calendar"></i>{{ page.date | page.date: date_format }}</div>
+  <div class="post-date" style="color: black;"><i
+      class="icon-calendar"></i>{{ page.date | page.date: date_format }}</div>
   </div>
   <div class="post">
     {{ content }}
