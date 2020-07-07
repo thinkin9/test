@@ -45,10 +45,9 @@
           </li>
         </a>
       </ul>
-      <!--
-        <div class="site-category" style="font-size: 18px;">Categories
+      <div class="site-category" style="font-size: 18px;">Categories
         <br>
-        <li><a href="/test">Git</a>
+        <li><a href="/test/category/Git.html">Git</a>
           {% for post in site.categories["Git"] %}
             <li>
               <a href="{{ site.baseurl| }}{{ post.url| }}">
@@ -57,8 +56,7 @@
             </li>
             {% endfor %}
         </li>
-        <br>
-        <li><a href="/test">Me</a>
+        <li><a href="/test/category/Me.html">Me</a>
           {% for post in site.categories["Me"] %}
             <li>
               <a href="{{ site.baseurl| }}{{ post.url| }}">
@@ -68,18 +66,6 @@
             {% endfor %}
         </li>
       </div>
-    -->
-      <ul class="post-list" style="text-align: left;">
-        {% assign pages_list = site.pages %}
-        {% for node in pages_list %}
-          {% if node.title != null %}
-            {% if node.layout == "category" %}
-              <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-              href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </ul>
 
       <!--
         {%- if site.plainwhite.navigation -%}

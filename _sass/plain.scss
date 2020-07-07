@@ -250,10 +250,12 @@ main {
 }
 
 .site-category{
+  font-size: 22px;
+  color: #222222;
+  font-weight: normal;
+  text-align: left;
   margin: 0;
   padding: 0;
-  font-size: 12px;
-  text-align: center;
   display: inline-block;
   width: 100%;
   ul{
@@ -261,13 +263,11 @@ main {
   }
   li{
     display: block;
-    text-align: left;
     line-height: 1.5;
     margin-left: 10px;
   }
   li a{
     text-decoration: none;
-    text-align: left;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -288,8 +288,13 @@ main {
     display: inline-block;
   }
   li li a{
+    background-color: #e3e3e3;
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
     text-decoration: none;
-    display: block;
     margin: 0;
     padding: 0;
   }
