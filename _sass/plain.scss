@@ -255,28 +255,29 @@ main {
   color: #222222;
   display: block;
   text-decoration: none;
-  line-height: 1.5;
   width: 100%;
+  @media screen and (max-width: $smallMobileW) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: $mobileW) {
+    padding: 0 !important;
+    margin-top: 0;
+  }
   li{
     position: relative;
     display: inline;
-    margin: 0;
-    padding: 0;
   }
   li a{
     display: block;
     font-size: 18px;
     text-decoration: none;
     position: relative;
-    margin: 0;
-    padding: 0;
   }
   li ul{
     position: relative;
     display: none;
     list-style: none;
-    margin: 0;
-    padding: 0;
   }
   li:hover ul{
     display: inline;
@@ -285,7 +286,6 @@ main {
     display: block;
     font-size: 14px;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
+    margin-left: 1em;
   }
 }
