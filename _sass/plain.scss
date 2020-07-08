@@ -250,20 +250,18 @@ main {
 }
 
 .site-category{
+  text-align: left;
   font-size: 22px;
   background-color: white;
   color: #222222;
   font-weight: normal;
-  text-align: left;
   margin: 0;
   padding: 0;
   display: inline-block;
   text-decoration: none;
   line-height: 1.5;
-  ul{
-    list-style: none;
-  }
   li{
+    padding-right: 0;
     font-size: 14px;
     text-decoration: none;
   }
@@ -274,13 +272,13 @@ main {
   li ul{
     font-size: 14px;
     display: none;
-    position: absolute;
+    position: relative;
   }
   li:hover ul{
     display: inline-block;
   }
   li ul :hover{
-    background-color: blue;
+    background-color: #f9f9f9;
     text-decoration: none;
   }
 }

@@ -45,13 +45,14 @@
           </li>
         </a>
       </ul>
-      <div class="site-category" style="font-size: 18px; margin-bottom: 0.5em;">Categories
+      <div class="site-category" style="font-size: 18px;">Categories
         <br>
         <li><a href="/test/category/Git.html">Git</a>
           <ul>
             {% for post in site.categories["Git"] %}
               <li>
                 <a class="post-link"href="{{ post.url }}/">
+                  {{ relative_url }}
                   {{ post.url }}
                   {{ post.title }}
                 </a>
@@ -63,7 +64,7 @@
           <ul>
             {% for post in site.categories["Me"] %}
             <li>
-              <a href="{{ post.url | relative_url }}">
+              <a href="{{ relative_url }}">
                 {{ post.title }}
               </a>
             </li>
