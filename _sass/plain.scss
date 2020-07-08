@@ -250,11 +250,9 @@ main {
 }
 
 .site-category{
-  text-align: left;
   font-size: 22px;
   background-color: white;
   color: #222222;
-  font-weight: normal;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -262,6 +260,7 @@ main {
   line-height: 1.5;
   width: 100%;
   li{
+    position: relative;
     display: inline;
   }
   li a{
@@ -276,7 +275,7 @@ main {
     padding: 0;
   }
   li:hover ul{
-    display: inline-block;
+    display: list-item;
   }
   li ul a{
     display: block;
