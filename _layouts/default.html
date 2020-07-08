@@ -45,19 +45,19 @@
           </li>
         </a>
       </ul>
-      <div align="left" class="site-category">Categories
+      <div class="site-category">Categories
         <br>
-        <li><a href="/test/category/Git.html">Git</a>
+        <li><a href="/category/Git.html">Git</a>
           <ul>
             {% for post in site.categories["Git"] %}
-              <li><a href="{{ site.baseurl| }}{{ post.url| }}">{{ post.title }}</a href="">
+              <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a href="">
             {% endfor %}
           </ul>
         </li>
-        <li><a href="/test/category/Me.html">Me</a>
+        <li><a href="/category/Me.html">Me</a>
           <ul>
             {% for post in site.categories["Me"] %}
-            <li><a href="{{ site.baseurl| }}{{ post.url| }}">{{ post.title }}</a href="">
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a href="">
             {% endfor %}
           </ul>
         </li>

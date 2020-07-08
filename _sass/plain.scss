@@ -260,32 +260,25 @@ main {
   display: inline-block;
   text-decoration: none;
   line-height: 1.5;
+  width: 100%;
   li{
-    margin-right: 10px;
-    font-size: 14px;
+    display: inline;
   }
   li a{
+    display: block;
+    font-size: 18px;
     text-decoration: none;
   }
-  li:hover {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-  }
-
   li ul{
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    display: none;
     position: absolute;
+    display: none;
   }
   li:hover ul{
-    background-color: white;
     display: inline-block;
   }
   li ul a{
+    font-size: 14px;
     text-decoration: none;
+    display: inline-block;
   }
 }
