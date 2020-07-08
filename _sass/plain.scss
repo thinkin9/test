@@ -261,13 +261,13 @@ main {
   text-decoration: none;
   line-height: 1.5;
   li{
-    padding-right: 0;
     font-size: 14px;
   }
   li a{
     text-decoration: none;
   }
   li:hover {
+    background-color: white;
     margin: 0;
     padding: 0;
   }
@@ -281,6 +281,7 @@ main {
     position: absolute;
   }
   li:hover ul{
+    background-color: white;
     display: inline-block;
   }
   li ul a{
