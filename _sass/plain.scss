@@ -256,13 +256,13 @@ main {
   display: block;
   text-decoration: none;
   width: 100%;
-  @media screen and (max-width: $smallMobileW) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
   @media screen and (max-width: $mobileW) {
-    padding: 0 !important;
-    margin-top: 0;
+    height: auto;
+    padding: 10vh 0;
+  }
+  @media screen and (min-width: $mobileW + 1) {
+    position: fixed;
+    max-width: 285px;
   }
   li{
     position: relative;
