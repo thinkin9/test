@@ -263,25 +263,25 @@ main {
   ul{
     list-style: none;
     line-height: 1.5;
-    margin: 0 auto;
   }
   li{
+    font-size: 14px;
+    text-decoration: none;
     line-height: 1.5;
-    margin-left: 10px;
   }
   li:hover {
     background: #e3e3e3;
   }
 
   li ul{
+    font-size: 14px;
     display: none;
     position: absolute;
   }
   li:hover ul{
     display: inline-block;
-    background-color: #e3e3e3;
   }
-  li ul a:hover{
-    text-decoration: none;
+  li ul:hover{
+    background: #e9e9e9;
   }
 }
