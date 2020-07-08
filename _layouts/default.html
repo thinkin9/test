@@ -51,8 +51,9 @@
           <ul>
             {% for post in site.categories["Git"] %}
               <li>
-                <a href="/{{ post.url }}/">
-                  {{post.title}}
+                {% assign post_url = post.url %}
+                <a href="{{ post_url }}">
+                  {{ post.title }}
                 </a>
               </li>
             {% endfor %}
@@ -62,8 +63,8 @@
           <ul>
             {% for post in site.categories["Me"] %}
             <li>
-              <a href="/">
-                {{post.title}}
+              <a href="/test">
+                {{ post.title }}
               </a>
             </li>
             {% endfor %}
